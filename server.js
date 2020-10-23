@@ -51,7 +51,7 @@ app.use((error, req, res, next) => {
     if(process.env.NODE_ENV === 'production') {
         response = { error: { message: 'server error' }}
     } else {
-        response { error }
+        response = { error }
     }
     res.status(500).json(response)
 })
